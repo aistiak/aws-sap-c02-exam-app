@@ -51,12 +51,12 @@ export default async function handler(req, res) {
 
     // Check user limit (20 users max)
     const userCount = await db.getUserCount();
-    if (userCount >= 20) {
-      return res.status(400).json({ 
-        error: 'Maximum number of users (20) has been reached',
-        code: 'USER_LIMIT_REACHED'
-      });
-    }
+    // if (userCount >= 20) {
+    //   return res.status(400).json({ 
+    //     error: 'Maximum number of users (20) has been reached',
+    //     code: 'USER_LIMIT_REACHED'
+    //   });
+    // }
 
     // Create user
     const user = await db.createUser({
