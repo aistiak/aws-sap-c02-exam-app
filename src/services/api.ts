@@ -1,7 +1,8 @@
 // API service for server-side communication
-const API_BASE_URL = process.env.NODE_ENV === 'production' 
-  ? 'https://aws-sap-c02-exam-app.vercel.app/api'
-  : '/api';
+// const API_BASE_URL = process.env.NODE_ENV === 'production' 
+//   ? 'https://aws-sap-c02-exam-app.vercel.app/api'
+//   : '/api';
+const API_BASE_URL = '/api';
 
 interface ApiResponse<T = unknown> {
   success: boolean;
